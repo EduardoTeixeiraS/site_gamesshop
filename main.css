@@ -1,0 +1,171 @@
+/* Reset de config */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mudança fonte do cabeçalho, título "Sobre a loja" e botão de "Enviar" */
+/* font-weight: normal pois o navegador aplicou, por padrão, o bold no h1 e h2 */
+header,
+section h2,
+section h3,
+form button {
+    font-family: 'Bungee', cursive;
+    font-weight: normal;
+}
+
+/* Fonte do restante do site */
+body,
+input,
+textarea {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilização do cabeçalho */
+header {
+    padding: 16px 0;
+    background-color: #182c61;
+    color: #ecf0f1;
+}
+
+/* Display do menu centralizado na linha */
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 18px;
+}
+
+/* Remoção do underline dos botões do menu */
+header nav li a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+/* Formatação da página */
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Formatação do cabeçalho e itens abaixo dele (código reaproveitado) */
+header .container,
+section .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Ajuste no tamanho das logos como ~imagens~ */
+.brands-list img {
+    height: 24px;
+    margin-top: 10px;
+}
+
+/* Alinhamento das logos como ~lista~ (li) */
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* Sobrepondo a formatação anterior para melhor visualização do texto */
+section .container {
+    align-items: flex-start;
+}
+
+/* Espaçamento dos itens abaixo do cabeçalho */
+section {
+    padding: 24px 0;
+}
+
+/* Espaçamento do "Sobre a loja" */
+section h2 {
+    margin-bottom: 16px;
+}
+
+/* Definindo a cor de todos os textos dentro de <section> */
+/* Cores não se aplicam a imagens */
+section {
+    color: #182c61;
+}
+
+/* Espaçamento do texto */
+section p {
+    margin-bottom: 16px;
+}
+
+/* Espaçamento da fachada da loja (foi criado uma classe somente para a fachada) */
+.store-front {
+    margin-right: 32px;
+}
+
+/* Ajuste do tamanho (imagem) dos sociallinks */
+.social-links img {
+    height: 24px;
+}
+
+/* Formatando os sociallinks */
+.social-links li {
+    display: inline;
+    margin-right: 8px;
+}
+
+/* Remoção do underline dos sociallinks */
+.social-links li a {
+    text-decoration: none;
+}
+
+#contact .container {
+    display: block;
+}
+
+.contact-methods {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Formatando caixas de texto */
+form input,
+form textarea,
+form button {
+    display: block;
+    width: 320px;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+
+/* Desabilitando redimensionamento da caixa de texto */
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+/* Espaçamento dos titulos da seção "Contato" */
+section h3 {
+    margin-bottom: 16px;
+}
+
+/* Estilização do botão Enviar */
+form button {
+    background-color: #182c61;
+    color: #ecf0f1;
+    border: none;
+    cursor: pointer;
+}
+
+/* Customização do mouse quando posto em cima do botão */
+form button:hover {
+    background-color: #314e9e;
+}
+
+/* Customização da linha externa das caixas de texto quando estão sendo utilizadas */
+input:focus, textarea:focus {
+    outline-color: #182c61;
+}
+
+footer {
+    background-color: #182c61;
+    color: #ecf0f1;
+    padding: 16px 0;
+}
